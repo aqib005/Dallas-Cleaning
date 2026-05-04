@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>CleanMatch Dallas – Get a Trusted House Cleaner Today</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#0f766e;--teal-light:#ccfbf1;--teal-mid:#14b8a6;
+  --blue:#1e40af;--blue-light:#dbeafe;
+  --green:#16a34a;--green-light:#dcfce7;
+  --ink:#0f172a;--muted:#64748b;--border:#e2e8f0;
+  --bg:#f8fafc;--white:#ffffff;
+  --radius:14px;--radius-lg:22px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.6;overflow-x:hidden}
+
+.sticky-bar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 32px;
+}
+.sticky-logo{font-size:1rem;font-weight:700;color:var(--teal);letter-spacing:-0.02em}
+.sticky-logo span{color:var(--ink)}
+.btn-primary{
+  background:var(--teal);color:#fff;
+  border:none;border-radius:50px;
+  padding:11px 24px;font-family:'Sora',sans-serif;
+  font-weight:600;font-size:0.875rem;cursor:pointer;
+  transition:background 0.2s,transform 0.15s,box-shadow 0.2s;
+  box-shadow:0 4px 14px rgba(15,118,110,0.28);
+  white-space:nowrap;
+}
+.btn-primary:hover{background:#0d6b63;transform:translateY(-1px);box-shadow:0 6px 18px rgba(15,118,110,0.35)}
+.btn-primary.large{padding:16px 36px;font-size:1rem}
+
+.hero{
+  padding:80px 32px 72px;
+  text-align:center;
+  background:linear-gradient(160deg,#f0fdf9 0%,#f8fafc 55%,#eff6ff 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{content:'';position:absolute;top:-120px;right:-120px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,0.08) 0%,transparent 70%)}
+.hero::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,0.06) 0%,transparent 70%)}
+.hero-inner{position:relative;z-index:1;max-width:640px;margin:0 auto}
+.hero-tag{display:inline-flex;align-items:center;gap:7px;background:var(--teal-light);color:var(--teal);border-radius:50px;padding:6px 16px;font-size:0.78rem;font-weight:600;margin-bottom:28px;letter-spacing:0.02em}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--teal-mid);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(1.3)}}
+h1{font-family:'Sora',sans-serif;font-size:clamp(2rem,5.5vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.04em;color:var(--ink);margin-bottom:20px}
+h1 .accent{color:var(--teal)}
+.hero-sub{font-family:'Lora',serif;font-style:italic;font-size:clamp(1rem,2vw,1.15rem);color:var(--muted);max-width:480px;margin:0 auto 38px;line-height:1.7}
+.hero-cta-group{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:52px}
+.hero-fine{font-size:0.78rem;color:var(--muted)}
+.hero-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--border);border-radius:50px;padding:8px 16px;font-size:0.82rem;font-weight:500;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+.chip-icon{font-size:14px}
+
+section{padding:72px 32px}
+.section-inner{max-width:860px;margin:0 auto}
+.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;letter-spacing:-0.035em;line-height:1.15;color:var(--ink);margin-bottom:14px}
+.section-sub{font-size:1rem;color:var(--muted);max-width:480px;line-height:1.65;margin-bottom:48px}
+
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.trust-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px 22px;transition:transform 0.2s,box-shadow 0.2s}
+.trust-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.07)}
+.trust-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+.trust-icon.teal{background:var(--teal-light)}.trust-icon.blue{background:var(--blue-light)}.trust-icon.green{background:var(--green-light)}
+.trust-card h4{font-size:0.95rem;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.trust-card p{font-size:0.82rem;color:var(--muted);line-height:1.55}
+
+.how-bg{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.step{text-align:center;padding:8px 12px}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--teal);color:#fff;font-size:1.2rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 4px 14px rgba(15,118,110,0.25)}
+.step h4{font-size:1rem;font-weight:600;margin-bottom:8px;color:var(--ink)}
+.step p{font-size:0.875rem;color:var(--muted);line-height:1.6}
+
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.review-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 26px}
+.review-stars{color:#f59e0b;font-size:14px;letter-spacing:2px;margin-bottom:14px}
+.review-text{font-family:'Lora',serif;font-style:italic;font-size:1rem;color:var(--ink);line-height:1.7;margin-bottom:18px}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff}
+.av-teal{background:var(--teal)}.av-blue{background:var(--blue)}
+.review-name{font-size:0.875rem;font-weight:600;color:var(--ink)}
+.review-loc{font-size:0.78rem;color:var(--muted)}
+
+.urgency-section{background:linear-gradient(135deg,#0f766e 0%,#0d6b63 50%,#1e40af 100%);color:#fff;text-align:center;padding:64px 32px}
+.urgency-inner{max-width:560px;margin:0 auto}
+.urgency-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:50px;padding:6px 16px;font-size:0.78rem;font-weight:600;margin-bottom:24px;color:#fff}
+.urgency-section h2{color:#fff;margin-bottom:14px}
+.urgency-section p{color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:32px;line-height:1.65}
+.slots-bar{background:rgba(255,255,255,0.15);border-radius:50px;height:8px;margin-bottom:12px;overflow:hidden}
+.slots-fill{height:100%;background:#fff;border-radius:50px;width:74%;animation:fillBar 1.5s ease both 0.5s}
+@keyframes fillBar{from{width:0}to{width:74%}}
+.slots-label{font-size:0.8rem;color:rgba(255,255,255,0.75);margin-bottom:28px}
+.btn-white{background:#fff;color:var(--teal);border:none;border-radius:50px;padding:16px 36px;font-family:'Sora',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15);transition:transform 0.15s,box-shadow 0.2s}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+
+/* GOOGLE FORM SECTION */
+.form-section{background:var(--bg);padding:80px 32px}
+.form-section-header{text-align:center;max-width:560px;margin:0 auto 36px}
+.form-section-header .form-title{font-size:1.8rem;font-weight:700;color:var(--ink);margin-bottom:10px;letter-spacing:-0.03em}
+.form-section-header .form-sub{font-size:0.95rem;color:var(--muted);line-height:1.6}
+
+.gform-wrapper{
+  max-width:640px;margin:0 auto;
+  border-radius:var(--radius-lg);overflow:hidden;
+  box-shadow:0 8px 40px rgba(0,0,0,0.09);
+  border:1px solid var(--border);
+}
+.gform-wrapper iframe{
+  width:100%;display:block;border:none;
+}
+
+.form-guarantee{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;font-size:0.78rem;color:var(--muted)}
+.guarantee-dot{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+footer{background:var(--ink);color:rgba(255,255,255,0.55);text-align:center;padding:32px;font-size:0.8rem}
+footer span{color:var(--teal-mid)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp 0.55s ease both}
+.delay-1{animation-delay:0.1s}.delay-2{animation-delay:0.2s}.delay-3{animation-delay:0.3s}.delay-4{animation-delay:0.4s}
+
+@media(max-width:600px){
+  .sticky-bar{padding:12px 18px}
+  .hero{padding:60px 20px 56px}
+  section{padding:56px 20px}
+  .form-section{padding:56px 20px}
+  .btn-primary.large{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="sticky-bar">
+  <div class="sticky-logo">Clean<span>Match</span> Dallas</div>
+  <button class="btn-primary" onclick="document.getElementById('request-form').scrollIntoView({behavior:'smooth'})">Get Matched Now</button>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag fade-up"><span class="hero-tag-dot"></span> Dallas, TX · Available Today</div>
+    <h1 class="fade-up delay-1">Get a <span class="accent">Trusted</span> House Cleaner in Dallas Today</h1>
+    <p class="hero-sub fade-up delay-2">We match you with reliable, vetted cleaners available in your area within hours.</p>
+    <div class="hero-cta-group fade-up delay-3">
+      <button class="btn-primary large" onclick="document.getElementById('request-form').scrollIntoView({behavior:'smooth'})">Get Matched Now →</button>
+      <span class="hero-fine">Free matching · No commitment required</span>
+    </div>
+    <div class="hero-chips fade-up delay-4">
+      <div class="chip"><span class="chip-icon">✓</span> Vetted & verified</div>
+      <div class="chip"><span class="chip-icon">⚡</span> Response in 1–2 hrs</div>
+      <div class="chip"><span class="chip-icon">🔒</span> No spam calls</div>
+      <div class="chip"><span class="chip-icon">$</span> No hidden fees</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-label">Why CleanMatch</div>
+    <h2>Built for Dallas homeowners who value their time</h2>
+    <p class="section-sub">We do the vetting so you don't have to scroll through endless listings or deal with unreliable no-shows.</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon teal">✓</div>
+        <h4>Verified local cleaners</h4>
+        <p>Every cleaner passes a background check and in-person review before joining our network.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon blue">⚡</div>
+        <h4>Fast response, always</h4>
+        <p>Get matched and contacted within 1–2 hours. Same-day and next-day availability common.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon green">$</div>
+        <h4>No hidden fees</h4>
+        <p>Transparent pricing from the start. No surprise charges, no platform fees added to your bill.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon teal">🔕</div>
+        <h4>No spam calls</h4>
+        <p>Only matched cleaners contact you. We never sell your info or send unsolicited marketing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how-bg">
+  <div class="section-inner">
+    <div class="section-label">The process</div>
+    <h2>Three steps to a clean home</h2>
+    <p class="section-sub">Most homeowners get their first response within 90 minutes.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Tell us what you need</h4>
+        <p>Fill out our quick form — home size, cleaning type, and preferred timing. Takes under 2 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>We match you instantly</h4>
+        <p>Our system finds available, vetted cleaners in your Dallas neighborhood who fit your request.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Get contacted & book</h4>
+        <p>Your matched cleaner reaches out directly. Confirm details, schedule, and you're done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-label">Real homeowners</div>
+    <h2>Dallas neighbors love CleanMatch</h2>
+    <p class="section-sub">Hundreds of Dallas homeowners have found reliable cleaners through our platform.</p>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Found a cleaner within 2 hours. Super easy. I expected to spend an afternoon searching — took me 5 minutes on the form."</p>
+        <div class="review-author">
+          <div class="review-avatar av-teal">SK</div>
+          <div><div class="review-name">Sarah K.</div><div class="review-loc">Lakewood, Dallas</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Way better than searching randomly online. The cleaner they matched me with was punctual, professional, and reasonably priced."</p>
+        <div class="review-author">
+          <div class="review-avatar av-blue">MR</div>
+          <div><div class="review-name">Marcus R.</div><div class="review-loc">Preston Hollow, Dallas</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"No spam, no sketchy calls. Just one message from a cleaner who was available that Saturday. Booked her on the spot."</p>
+        <div class="review-author">
+          <div class="review-avatar av-teal">TL</div>
+          <div><div class="review-name">Tanya L.</div><div class="review-loc">Oak Cliff, Dallas</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="urgency-section">
+  <div class="urgency-inner">
+    <div class="urgency-tag">⏳ Limited daily slots</div>
+    <h2>We only accept a limited number of requests per day</h2>
+    <p>To ensure every homeowner gets a quality match, we cap daily requests. Spots fill up fast — especially on weekends.</p>
+    <div class="slots-bar"><div class="slots-fill"></div></div>
+    <p class="slots-label">74% of today's slots claimed</p>
+    <button class="btn-white" onclick="document.getElementById('request-form').scrollIntoView({behavior:'smooth'})">Claim Your Spot Now →</button>
+  </div>
+</section>
+
+<!-- GOOGLE FORM EMBED -->
+<section class="form-section" id="request-form">
+  <div class="form-section-header">
+    <div class="section-label" style="text-align:center">Get matched</div>
+    <div class="form-title">Get Matched Now</div>
+    <p class="form-sub">Fill in your details and we'll find available cleaners in your area within 1–2 hours.</p>
+  </div>
+
+  <div class="gform-wrapper">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfOpTZpDp-4FF0M2mQnj5HH1Qs0MtXdbQPu5uwa4LA8zhDfNg/viewform?embedded=true" 
+      width="100%"
+      height="900"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      title="CleanMatch Dallas – Get Matched Request Form"
+    >Loading…</iframe>
+  </div>
+
+  <div class="form-guarantee">
+    <span class="guarantee-dot"></span>
+    No spam calls · Free to request · No hidden fees
+  </div>
+</section>
+
+<footer>
+  <div>© 2025 <span>CleanMatch Dallas</span> · Serving Dallas, TX homeowners · Privacy Policy</div>
+</footer>
+
+</body>
+</html>
